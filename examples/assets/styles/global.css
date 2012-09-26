@@ -1,0 +1,344 @@
+body{
+	background:#271c18;	
+	}
+
+*{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.futuraBook{font-family:"futura-pt"; font-weight:400; font-style:normal;}
+.futuraBold{font-family:"futura-pt"; font-weight:700; font-style:normal;}
+.futuraExBold{font-family:"futura-pt"; font-weight:800; font-style:normal;}
+		
+header{
+	display:block;
+	height:57px;
+	overflow:hidden;
+	padding:8px 0 0 0;
+	background:url("../images/bg_header.jpg") repeat-x top;
+}
+nav{
+	display:block;
+	height:30px;
+	overflow:hidden;
+	border-top:1px solid #383838;
+	border-bottom:1px solid #000;
+	background:#404040;
+}
+nav a{
+	display:inline-block;
+	float:left;
+	width:33.3%;
+	height:28px;
+	overflow:hidden;
+	background:#000;
+	text-align:center;
+	color:#fff;
+	font-family:"futura-pt", Arial, Helvetica, sans-serif;
+	font-weight:400;
+	font-style:normal;
+	font-size:20px;
+	line-height:28px;
+	text-transform:uppercase;
+	border-right:1px solid #383838;
+	border-bottom:1px solid #383838;
+	text-decoration:none;
+	outline:none;
+}
+nav a:hover{background:#262626;}
+nav a.selected{background:#262626; color:#b27e2b;}
+
+.liveArea{
+	width:1000px;
+	padding:0 15px;
+	margin:0 auto;
+}
+
+nav .liveArea{
+	padding:0 0px;
+}
+
+.mainContent{
+	width: 1000px;
+	height:760px;
+	overflow:hidden;
+	/*padding:0 15px;*/
+	margin:0 auto;
+	position:relative;
+	background:#271c18;
+}
+
+#video_bck{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	position:relative;
+	/*position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;*/
+}
+
+.intro{
+	position:absolute;
+	z-index:200;	
+	width:100%;
+	}
+.intro .introText{
+	display:inline-block;
+	zoom: 1;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	float:left;
+	width:33.3%;
+	margin:0;
+	padding:0;
+	text-align:center;
+	line-height:780px;
+	font-family:"futura-pt";
+	font-weight:400;
+	font-style:normal;
+	font-size:24px;
+	color:#e5d4a9;
+}
+
+.banners{
+	display:none;
+	/*display:inline-block;*/
+	float:left;
+	width:33.3%;
+	/*height:100%;*/
+	height:760px;
+	overflow:hidden;
+	border-bottom:1px solid #000;
+	background:#000;
+	cursor:pointer;
+	position:relative;
+}
+.banners.active{cursor:default;}
+.banners .background{
+	/*width:100%;*/
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:100;
+	zoom: 1;
+	filter: alpha(opacity=.85);
+	opacity: .85;
+}
+#build{
+	
+}
+#build .background{width:854px;}
+
+#share{
+
+}
+#share .background{width:854px;}
+
+#video{
+
+}
+#video .background{width:854px;}
+
+.banners .liveArea{
+	
+}
+
+#build .liveArea{
+	display:none;
+	width:500px;
+	height:760px;
+	margin:0 auto;	
+	padding:40px 95px 0 40px;
+	background:url("../images/bg_transparent.png");
+	position:absolute;
+	top:0;
+	z-index:200;
+}
+
+#build .liveArea1{
+	width:70%;
+	left:0%;
+	right:auto;
+	margin:0px 0px;
+	
+	display:none;
+	height:760px;
+	padding:40px 95px 0 40px;
+	background:url("../images/bg_transparent.png");
+	position:absolute;
+	top:0;
+	z-index:200;
+}
+#build .liveArea2{
+	width:70%;
+	left:auto;
+	right:0px;
+	margin:0px 0px;
+	
+	display:none;
+	height:760px;
+	padding:40px 95px 0 40px;
+	background:url("../images/bg_transparent.png");
+	position:absolute;
+	top:0;
+	z-index:200;
+}
+
+.banners .liveArea h1{
+	font-family:"futura-pt";
+	font-weight:400;
+	font-style:normal;
+	font-size:27px;
+	color:#e5d4a9;
+	margin:0;
+	padding:0;
+}
+
+.banners .liveArea p{
+	font-size:12px;
+	color:#fff;
+}
+
+.setBuckets{
+	display:block;
+	clear:both;
+}
+.setBuckets .setBucket1{
+	display:block;
+	float:left;
+	width:414px;
+	/*overflow:hidden;*/
+	padding:4px;
+	background:#e5d4a9;
+}
+.setBuckets .setBucket1 .setImage{
+	height:272px;
+	position:relative;
+	background:url("../images/miniset_accucore.jpg");
+}
+.setBuckets .setBucket1 .setImage span{
+	width:26px;
+	height:26px;
+	position:absolute;
+	background:url("../images/hotspot.png") no-repeat;
+	cursor:pointer;
+	padding:0 0 0 30px;
+}
+.setBuckets .setBucket1 .setImage span span.popup{
+	display:none;
+	width:165px;
+	height:74px;
+	padding:10px;
+	background:url("../images/bg_transparent_popup.png");
+	border:1px solid #7b994e;
+	/*overflow:hidden;
+	position:relative;*/
+}
+
+.setBuckets .setBucket1 .setImage span span.popup img{
+	/*position:absolute;
+	top:50%;
+	left:-22px;*/
+	margin:24px 0 0 -32px;
+}
+
+.setBuckets .setBucket1 .setImage span span.popup a{
+	display:block;
+	width:143px;
+	height:28px;
+	background:#4b342c;
+	text-align:center;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#fff;
+	text-transform:uppercase;
+	font-weight:bold;
+	text-decoration:none;
+	line-height:28px;
+}
+
+.setBuckets .setBucket1 .setImage span:hover span.popup{display:block;}
+
+.setBuckets .setBucket1 .setImage span.base1{
+	left:200px;
+	top:65px;
+}
+.setBuckets .setBucket1 .setImage span.base2{}
+.setBuckets .setBucket1 .setImage span.base3{}
+.setBuckets .setBucket2{
+	display:block;
+	float:right;
+	width:414px;
+	/*overflow:hidden;*/
+	padding:4px;
+	background:#e5d4a9;
+}
+.setBuckets .setBucket2 .setImage{
+	height:272px;
+	position:relative;
+	background:url("../images/miniset_unison.jpg");
+}
+
+
+.selectSet{
+	display:none;
+	width:50%;
+	height:760px;
+	position:relative;
+	z-index:200;
+	cursor:pointer;
+}
+.selectSet.active{
+	cursor:default;
+}
+
+.selectSet.set1{
+	float:left;
+	background:#999966;
+}
+.selectSet.set2{
+	float:right;
+	background:#C99;
+}
+.selectSet.set1:hover, .selectSet.set2:hover{background:#FF6;}
+
+footer{
+	display:block;
+	height:100px;
+	overflow:hidden;
+	background:#000;
+	border-top:5px solid #666;
+}
+
+@media screen and (max-width: 1024px) {
+	.mainContent{width:100%;}
+	.liveArea{width:100%;}
+}
+
+@media screen and (max-width: 800px) {
+	.mainContent{width:768px;}
+	.liveArea{width:768px;}
+}
+
+
+/* using <video> tag */
+
+#container{
+	position:fixed;
+	z-index: 1;
+	overflow:hidden;	
+}
+
+#videoHtml5{
+	height: 100%;
+	left: 0;
+	margin: 0;
+	position: relative;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}

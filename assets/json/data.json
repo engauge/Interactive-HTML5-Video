@@ -1,0 +1,32 @@
+{
+    "LiveData":{
+        "mark":[
+            {
+                "name":"my circle",
+				"id":"circle1",
+				"cssClass":"circle",
+                "width":70,
+                "height":70,
+				"posX":20,
+				"posY":100,
+				"overlay":"px",
+				"timeIn":10,
+				"timeOut":15,
+				"action":""
+            },
+            {
+                "name":"my square",
+				"id":"square1",
+				"cssClass":"square",
+                "width":60,
+                "height":30,
+				"posX":200,
+				"posY":5,
+				"overlay":"px",
+				"timeIn":3,
+				"timeOut":6,
+				"action":""
+            }
+        ]
+    }
+}
